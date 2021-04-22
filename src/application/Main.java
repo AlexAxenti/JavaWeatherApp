@@ -55,7 +55,7 @@ public class Main extends Application {
 		Text weatherText = new Text ("0 degrees Celsius");
 		weatherText.setFont(Font.font("Tahoma", FontWeight.NORMAL, 15));
 		
-		Button button = new Button("Search");
+		Button button = new Button("Searh");
 		button.setOnAction(e -> {
 			Scraper scrape = new Scraper(cityTF.getText(), provinceTF.getValue().toString());
 			double temp = 0;
